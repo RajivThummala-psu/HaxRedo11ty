@@ -4,7 +4,7 @@
   <subtitle>project documentation</subtitle>
   <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/rss.xml" rel="self"/>
   <link href="https://RajivThummala-psu.github.io/HaxRedo11ty"/>
-  <updated>2022-03-05T19:01:47.026-00:00</updated>
+  <updated>2022-03-05T19:26:52.212-00:00</updated>
   <id>https://RajivThummala-psu.github.io/HaxRedo11ty</id>
   <author>
     <name>RajivThummala-psu</name>
@@ -14,7 +14,7 @@
   <entry>
     <title>This is Rajiv&#39;s redo of the hax11ty</title>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/home/"/>
-    <updated>2022-03-05T19:01:47.026-00:00</updated>
+    <updated>2022-03-05T19:26:52.212-00:00</updated>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/home/</id>
     <content type="html">&lt;p&gt;&lt;ul&gt;
     RAJIV ATTEMPT AT HAX 11TY!!!!
@@ -31,7 +31,7 @@
   <entry>
     <title>Community examples</title>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/Community/"/>
-    <updated>2022-03-05T19:01:47.026-00:00</updated>
+    <updated>2022-03-05T19:26:52.212-00:00</updated>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/Community/</id>
     <content type="html">&lt;p&gt;Have an example site in production using HAX11ty? &lt;a href=&quot;https://rajivthummala-psu.github.io/HaxRedo11ty/content/posts/contact&quot;&gt;Contact us&lt;/a&gt; to let us know or &lt;a href=&quot;https://github.com/elmsln/hax11ty/tree/master/src/content&quot;&gt;add a PR via github&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -40,7 +40,7 @@
   <entry>
     <title>HAXTheWeb</title>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/HAXTeam/"/>
-    <updated>2022-03-05T19:01:47.026-00:00</updated>
+    <updated>2022-03-05T19:26:52.212-00:00</updated>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/HAXTeam/</id>
     <content type="html">&lt;p&gt;We loves us some HAX11ty and dogfood it for many project sites. Here&#39;s a link farm:&lt;/p&gt;
 &lt;ul&gt;
@@ -53,7 +53,7 @@
   <entry>
     <title>Examples</title>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/"/>
-    <updated>2022-03-05T19:01:47.026-00:00</updated>
+    <updated>2022-03-05T19:26:52.212-00:00</updated>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/</id>
     <content type="html">&lt;p&gt;Have an example site in production using HAX11ty? We&#39;d love to highlight it and spread the good vibes! Contact us and make sure to click around to the other great examples of HAX11ty out there in the wild&lt;/p&gt;
 </content>
