@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <pre><code>&lt;url&gt;
   &lt;loc&gt;https://RajivThummala-psu.github.io/HaxRedo11ty/content/home/&lt;/loc&gt;
-  &lt;lastmod&gt;2022-03-05T19:26:52+00:00&lt;/lastmod&gt;
+  &lt;lastmod&gt;2022-03-05T19:41:20+00:00&lt;/lastmod&gt;
   &lt;changefreq&gt;daily&lt;/changefreq&gt;
   &lt;priority&gt;1.0&lt;/priority&gt;
 &lt;/url&gt;
 
 &lt;url&gt;
   &lt;loc&gt;https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/Community/&lt;/loc&gt;
-  &lt;lastmod&gt;2022-03-05T19:26:52+00:00&lt;/lastmod&gt;
+  &lt;lastmod&gt;2022-03-05T19:41:20+00:00&lt;/lastmod&gt;
   &lt;changefreq&gt;daily&lt;/changefreq&gt;
   &lt;priority&gt;1.0&lt;/priority&gt;
 &lt;/url&gt;
 
 &lt;url&gt;
   &lt;loc&gt;https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/HAXTeam/&lt;/loc&gt;
-  &lt;lastmod&gt;2022-03-05T19:26:52+00:00&lt;/lastmod&gt;
+  &lt;lastmod&gt;2022-03-05T19:41:20+00:00&lt;/lastmod&gt;
   &lt;changefreq&gt;daily&lt;/changefreq&gt;
   &lt;priority&gt;1.0&lt;/priority&gt;
 &lt;/url&gt;
 
 &lt;url&gt;
   &lt;loc&gt;https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/&lt;/loc&gt;
-  &lt;lastmod&gt;2022-03-05T19:26:52+00:00&lt;/lastmod&gt;
+  &lt;lastmod&gt;2022-03-05T19:41:20+00:00&lt;/lastmod&gt;
   &lt;changefreq&gt;daily&lt;/changefreq&gt;
   &lt;priority&gt;1.0&lt;/priority&gt;
 &lt;/url&gt;
