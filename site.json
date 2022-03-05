@@ -1,0 +1,148 @@
+{
+  "id": "#4b10132d-8045-8dba-adae-46c1331595e9",
+  "title": "HaxRedo11ty",
+  "author": "RajivThummala-psu",
+  "description": "project documentation",
+  "license": "by-sa",
+  "metadata": {
+    "author": {
+      "image": "https://github.com/RajivThummala-psu.png",
+      "name": "RajivThummala-psu",
+      "email": "",
+      "socialLink": "https://twitter.com/"
+    },
+    "site": {
+      "name": "HaxRedo11ty",
+      "created": 1646506937212,
+      "updated": 1646506937212,
+      "git": {
+        "autoPush": false,
+        "branch": "master",
+        "staticBranch": "gh-pages",
+        "vendor": "github",
+        "publicRepoUrl": "https://github.com/RajivThummala-psu/HaxRedo11ty/blob/master/src/",
+        "url": "git@github.com:RajivThummala-psu/HaxRedo11ty.git"
+      },
+      "version": "1.2.9-11ty",
+      "domain": "https://localhost:8000",
+      "logo": "assets/images/photo-1497493292307-31c376b6e479.jpeg",
+      "static": {
+        "cdn": "build",
+        "offline": false
+      },
+      "settings": {
+        "pathauto": false,
+        "publishPagesOn": false,
+        "forceUpgrade": true,
+        "sw": false
+      }
+    },
+    "theme": {
+      "element": "clean-two",
+      "variables": {
+        "image": "assets/banner.jpg",
+        "hexCode": "#55FF55",
+        "cssVariable": "--simple-colors-default-theme-green-7",
+        "logo": "lrn:network"
+      }
+    }
+  },
+  "items": [
+    {
+      "id": "--content-posts-HAXTeam-md",
+      "indent": 0,
+      "location": "./pages/posts/HAXTeam.md",
+      "slug": "content/posts/HAXTeam/",
+      "order": -100,
+      "title": "HAXTheWeb",
+      "description": "HAXTheWeb",
+      "parent": "--content-posts-index-md",
+      "metadata": {
+        "created": 1646506907,
+        "updated": 1646506907,
+        "readtime": 1,
+        "contentDetails": {},
+        "files": [],
+        "haxcmsServiceWorker": true,
+        "tags": [
+          "content"
+        ],
+        "layout": "content.liquid",
+        "title": "HAXTheWeb",
+        "order": -100
+      }
+    },
+    {
+      "id": "--content-posts-Community-md",
+      "indent": 0,
+      "location": "./pages/posts/Community.md",
+      "slug": "content/posts/Community/",
+      "order": 1,
+      "title": "Community examples",
+      "description": "Community examples",
+      "parent": "--content-posts-index-md",
+      "metadata": {
+        "created": 1646506907,
+        "updated": 1646506907,
+        "readtime": 1,
+        "contentDetails": {},
+        "files": [],
+        "haxcmsServiceWorker": true,
+        "tags": [
+          "content"
+        ],
+        "layout": "content.liquid",
+        "title": "Community examples",
+        "order": 1
+      }
+    },
+    {
+      "id": "--content-posts-index-md",
+      "indent": 0,
+      "location": "./pages/posts/index.md",
+      "slug": "content/posts/",
+      "order": 1,
+      "title": "Examples",
+      "description": "Examples",
+      "parent": null,
+      "metadata": {
+        "created": 1646506907,
+        "updated": 1646506907,
+        "readtime": 1,
+        "contentDetails": {},
+        "files": [],
+        "haxcmsServiceWorker": true,
+        "tags": [
+          "content"
+        ],
+        "layout": "content.liquid",
+        "title": "Examples",
+        "order": 1
+      }
+    },
+    {
+      "id": "--content-home-md",
+      "indent": 0,
+      "location": "./pages/home.md",
+      "slug": "content/home/",
+      "order": 2,
+      "title": "This is Rajiv's redo of the hax11ty",
+      "description": "This is Rajiv's redo of the hax11ty",
+      "parent": null,
+      "metadata": {
+        "created": 1646506907,
+        "updated": 1646506907,
+        "readtime": 1,
+        "contentDetails": {},
+        "files": [],
+        "haxcmsServiceWorker": true,
+        "tags": [
+          "content"
+        ],
+        "layout": "content.liquid",
+        "title": "This is Rajiv's redo of the hax11ty",
+        "order": 2
+      }
+    }
+  ]
+}
