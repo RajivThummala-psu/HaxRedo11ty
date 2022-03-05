@@ -3,7 +3,7 @@
   <title>HaxRedo11ty</title>
   <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/atom.xml" rel="self" />
   <subtitle>project documentation</subtitle>
-  <updated>2022-03-05T20:54:51.927-00:00</updated>
+  <updated>2022-03-05T20:58:07.256-00:00</updated>
   <author>
       <name>RajivThummala-psu</name>
   </author>
@@ -11,8 +11,8 @@
   <entry>
     <title>This is Rajiv&#39;s redo of the hax11ty</title>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/home/</id>
-    <updated>2022-03-05T20:54:51.927-00:00</updated>
-    <published>2022-03-05T20:54:51.927-00:00</published>
+    <updated>2022-03-05T20:58:07.252-00:00</updated>
+    <published>2022-03-05T20:58:07.252-00:00</published>
     <summary></summary>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/home/"/>
     <content type="html">
@@ -31,8 +31,8 @@
   <entry>
     <title>Feeding IP addresses into the API of GeoIP to Obtain Geographic Coordinates (Lat/Long)</title>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/Community/</id>
-    <updated>2022-03-05T20:54:51.927-00:00</updated>
-    <published>2022-03-05T20:54:51.927-00:00</published>
+    <updated>2022-03-05T20:58:07.252-00:00</updated>
+    <published>2022-03-05T20:58:07.252-00:00</published>
     <summary></summary>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/Community/"/>
     <content type="html">
@@ -157,8 +157,8 @@ NASA Image and Video Library: Access to the NASA Image and Video Library.&lt;/p&
   <entry>
     <title>An introduction to open-wc</title>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/HAXTeam/</id>
-    <updated>2022-03-05T20:54:51.927-00:00</updated>
-    <published>2022-03-05T20:54:51.927-00:00</published>
+    <updated>2022-03-05T20:58:07.256-00:00</updated>
+    <published>2022-03-05T20:58:07.256-00:00</published>
     <summary></summary>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/HAXTeam/"/>
     <content type="html">
@@ -267,10 +267,10 @@ Change the directory to your web component and then run the following command:&l
     </content>
   </entry>
   <entry>
-    <title>Feeding IP addresses into the API of GeoIP to Obtain Geographic Coordinates (Lat/Long)</title>
+    <title>Generating a Docker File for your NASA Image Search Repo</title>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/dockerlab/</id>
-    <updated>2022-03-05T20:54:51.927-00:00</updated>
-    <published>2022-03-05T20:54:51.927-00:00</published>
+    <updated>2022-03-05T20:58:07.256-00:00</updated>
+    <published>2022-03-05T20:58:07.256-00:00</published>
     <summary></summary>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/dockerlab/"/>
     <content type="html">
@@ -306,8 +306,8 @@ Type 4000 into the prompt and click &amp;quot;Ok&amp;quot;.&lt;/p&gt;
   <entry>
     <title>My Dev.to Posts</title>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/</id>
-    <updated>2022-03-05T20:54:51.927-00:00</updated>
-    <published>2022-03-05T20:54:51.927-00:00</published>
+    <updated>2022-03-05T20:58:07.256-00:00</updated>
+    <published>2022-03-05T20:58:07.256-00:00</published>
     <summary></summary>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/"/>
     <content type="html">
