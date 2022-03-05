@@ -1,1 +1,1 @@
-<p>Have an example site in production using HAX11ty? We'd love to highlight it and spread the good vibes! Contact us and make sure to click around to the other great examples of HAX11ty out there in the wild</p>
+<p>This is my redo of the 11ty HAX. Hopefully this works. My name is Rajiv Thummala. Check out my different blog posts!</p>

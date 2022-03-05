@@ -39,23 +39,23 @@
 var precacheConfig = [
   [
     "/HaxRedo11ty/content/home/",
-    "NmW8zWMysy4qKveI"
+    "PUA8yjdduL8q34Bj"
   ],
   [
     "/HaxRedo11ty/content/posts/Community/",
-    "NmW8zWMysy4qKveI"
+    "PUA8yjdduL8q34Bj"
   ],
   [
     "/HaxRedo11ty/content/posts/HAXTeam/",
-    "NmW8zWMysy4qKveI"
+    "PUA8yjdduL8q34Bj"
   ],
   [
     "/HaxRedo11ty/content/posts/",
-    "NmW8zWMysy4qKveI"
+    "PUA8yjdduL8q34Bj"
   ],
   [
     "/HaxRedo11ty/",
-    "NmW8zWMysy4qKveI"
+    "PUA8yjdduL8q34Bj"
   ]
 ];
 var cacheName = 'sw-precache-v3--' + (self.registration ? self.registration.scope : '');

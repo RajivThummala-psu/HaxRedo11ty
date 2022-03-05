@@ -1,5 +1,13 @@
 [
   {
+   "id":"An introduction to open-wc",
+   "title":"An introduction to open-wc",
+   "created": "",
+   "location":"/HaxRedo11ty/content/posts/HAXTeam/",
+   "description":"Upon dipping your feet into the behemoth that is web development, you will quickly realize how non-static this field is. Everything is constantly changing and evolving, from updates to web protocols to constant syntax alterations. Consequently, a 1337 developer must periodically update their toolkit with the new fads and revolutions within the industry. With a sector that is never static, it is vital that the fundamentals of web development are mastered to provide a base in expanding a developer&#39;s toolkit. Perhaps one of the most important fundamentals to grasp is the basics of JavaScript. As adumbrated by tutorialspoint:Javascript is the most popular programming language in the world and that makes it a programmer’s great choice. Once you learnt Javascript, it helps you developing great front-end as well as back-end softwares using different Javascript based frameworks like jQuery, Node.JS etc. Javascript is everywhere, it comes installed on every modern web browser and so to lear",
+   "text":"Upon dipping your feet into the behemoth that is web development, you will quickly realize how non-static this field is. Everything is constantly changing and evolving, from updates to web protocols to constant syntax alterations. Consequently, a 1337 developer must periodically update their toolkit with the new fads and revolutions within the industry. With a sector that is never static, it is vital that the fundamentals of web development are mastered to provide a base in expanding a developer&#39;s toolkit. Perhaps one of the most important fundamentals to grasp is the basics of JavaScript. As adumbrated by tutorialspoint:Javascript is the most popular programming language in the world and that makes it a programmer’s great choice. Once you learnt Javascript, it helps you developing great front-end as well as back-end softwares using different Javascript based frameworks like jQuery, Node.JS etc. Javascript is everywhere, it comes installed on every modern web browser and so to lear"
+  },
+  {
    "id":"Community examples",
    "title":"Community examples",
    "created": "",
@@ -8,20 +16,12 @@
    "text":"Have an example site in production using HAX11ty? Contact us to let us know or add a PR via github"
   },
   {
-   "id":"Examples",
-   "title":"Examples",
+   "id":"My Dev.to Posts",
+   "title":"My Dev.to Posts",
    "created": "",
    "location":"/HaxRedo11ty/content/posts/",
-   "description":"Have an example site in production using HAX11ty? We'd love to highlight it and spread the good vibes! Contact us and make sure to click around to the other great examples of HAX11ty out there in the wild",
-   "text":"Have an example site in production using HAX11ty? We'd love to highlight it and spread the good vibes! Contact us and make sure to click around to the other great examples of HAX11ty out there in the wild"
-  },
-  {
-   "id":"HAXTheWeb",
-   "title":"HAXTheWeb",
-   "created": "",
-   "location":"/HaxRedo11ty/content/posts/HAXTeam/",
-   "description":"We loves us some HAX11ty and dogfood it for many project sites. Here's a link farm:	This site... duh :)	WCFactory",
-   "text":"We loves us some HAX11ty and dogfood it for many project sites. Here's a link farm:	This site... duh :)	WCFactory"
+   "description":"This is my redo of the 11ty HAX. Hopefully this works. My name is Rajiv Thummala. Check out my different blog posts!",
+   "text":"This is my redo of the 11ty HAX. Hopefully this works. My name is Rajiv Thummala. Check out my different blog posts!"
   },
   {
    "id":"This is Rajiv&#39;s redo of the hax11ty",

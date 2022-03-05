@@ -4,7 +4,7 @@
   <subtitle>project documentation</subtitle>
   <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/rss.xml" rel="self"/>
   <link href="https://RajivThummala-psu.github.io/HaxRedo11ty"/>
-  <updated>2022-03-05T19:41:20.620-00:00</updated>
+  <updated>2022-03-05T20:43:56.999-00:00</updated>
   <id>https://RajivThummala-psu.github.io/HaxRedo11ty</id>
   <author>
     <name>RajivThummala-psu</name>
@@ -14,7 +14,7 @@
   <entry>
     <title>This is Rajiv&#39;s redo of the hax11ty</title>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/home/"/>
-    <updated>2022-03-05T19:41:20.620-00:00</updated>
+    <updated>2022-03-05T20:43:56.999-00:00</updated>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/home/</id>
     <content type="html">&lt;p&gt;&lt;ul&gt;
     RAJIV ATTEMPT AT HAX 11TY!!!!
@@ -31,31 +31,127 @@
   <entry>
     <title>Community examples</title>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/Community/"/>
-    <updated>2022-03-05T19:41:20.620-00:00</updated>
+    <updated>2022-03-05T20:43:56.999-00:00</updated>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/Community/</id>
     <content type="html">&lt;p&gt;Have an example site in production using HAX11ty? &lt;a href=&quot;https://rajivthummala-psu.github.io/HaxRedo11ty/content/posts/contact&quot;&gt;Contact us&lt;/a&gt; to let us know or &lt;a href=&quot;https://github.com/elmsln/hax11ty/tree/master/src/content&quot;&gt;add a PR via github&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   
   <entry>
-    <title>HAXTheWeb</title>
+    <title>An introduction to open-wc</title>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/HAXTeam/"/>
-    <updated>2022-03-05T19:41:20.620-00:00</updated>
+    <updated>2022-03-05T20:43:56.999-00:00</updated>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/HAXTeam/</id>
-    <content type="html">&lt;p&gt;We loves us some HAX11ty and dogfood it for many project sites. Here&#39;s a link farm:&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;This site... duh :)&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;https://wcfactory.js.org/&quot;&gt;WCFactory&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+    <content type="html">&lt;p&gt;Upon dipping your feet into the behemoth that is web development, you will quickly realize how non-static this field is. Everything is constantly changing and evolving, from updates to web protocols to constant syntax alterations. Consequently, a 1337 developer must periodically update their toolkit with the new fads and revolutions within the industry. &lt;/p&gt;
+&lt;p&gt;With a sector that is never static, it is vital that the fundamentals of web development are mastered to provide a base in expanding a developer&amp;#39;s toolkit. Perhaps one of the most important fundamentals to grasp is the basics of JavaScript. As adumbrated by tutorialspoint:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Javascript is the most popular programming language in the world and that makes it a programmer’s great choice. Once you learnt Javascript, it helps you developing great front-end as well as back-end softwares using different Javascript based frameworks like jQuery, Node.JS etc. Javascript is everywhere, it comes installed on every modern web browser and so to learn Javascript you really do not need any special environment setup. For example Chrome, Mozilla Firefox , Safari and every browser you know as of today, supports Javascript.Javascript helps you create really beautiful and crazy fast websites. You can develop your website with a console like look and feel and give your users the best Graphical User Experience.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This article will provide a beginners perspective on how to begin to interact with JavaScript and will facilitate the setup process to begin exploring the language. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NodeJS &amp;amp; NPM&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Our first journey together in the world of JavaScript will begin by installing a software named &amp;quot;NodeJS&amp;quot;. What exactly is NodeJS?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In simple terms, it’s a JavaScript free and open source cross-platform for server-side programming that allows users to build network applications quickly. &lt;a href=&quot;https://medium.com/@LindaVivah/the-beginners-guide-understanding-node-js-express-js-fundamentals-e15493462be1&quot;&gt;Click here to learn more about NodeJS&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Follow the listed steps closely and don&amp;#39;t hesitate to scour the internet further to diagnose any challenges you encounter. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1)&lt;/strong&gt; Head over to &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;&lt;/a&gt; and select the big green button on the left that reads LTS. In my case, the version is 16.13.2 LTS. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/acy4bjyhnybk6x2ujpqc.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Once you finish downloading, proceed to the next step. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2)&lt;/strong&gt; Next, hold the windows key + R and type &amp;quot;cmd&amp;quot; in the run box that pops up. You can also type &amp;quot;command prompt&amp;quot; into the search bar in your computer if you prefer. This should open up a black box. This is called the terminal or command prompt. &lt;/p&gt;
+&lt;p&gt;Type node-v into your terminal. This will be used to check what version of NodeJS you have downloaded. Moreover, it will be used to check if you have actually downloaded NodeJS. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/evw47bt1u8jvcv3c1gju.png&quot; alt=&quot;You should get something like this&quot;&gt;&lt;/p&gt;
+&lt;p&gt;You should have something like this. The number following the &amp;quot;v&amp;quot; is your version number. (Don&amp;#39;t worry if it is different than what I have you may proceed to the next step). If you are encountering issues, head over to YouTube to search for a NodeJS download tutorial.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3)&lt;/strong&gt; Next we are going to make sure that npm downloaded correctly. Npm is a package manner that JavaScript leverages to facilitate the runtime environment. &lt;/p&gt;
+&lt;p&gt;Run the command npm-v to see what version of npm you have downloaded. Again, the same thing applies here. Don&amp;#39;t worry if the numbers following the v are different than the following image. This indicates your version number. If you do not have npm installed, try running the following commmand in your terminal:&lt;/p&gt;
+&lt;p&gt;npm install -g npm&lt;/p&gt;
+&lt;p&gt;If you are still running into trouble, head over to YouTube to search for installation tutorials for npm. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/10lhy60b79hxkwxj0bpb.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Installing ohmyzsh&lt;/strong&gt;
+Next we will work on installing ohmyzsh. Zsh will aid tremendously in operating the terminal. Head over to &lt;a href=&quot;https://dev.to/vsalbuq/how-to-install-oh-my-zsh-on-windows-10-home-edition-49g2&quot;&gt;&lt;/a&gt; for any extra explanations on the following steps. &lt;/p&gt;
+&lt;p&gt;1) To start, type &amp;quot;windows powershell&amp;quot; into the search bar in your computer. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/x93a14lwcckpj4s8thw6.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Select &amp;quot;run as administrator&amp;quot; as depicted in the image. If you do not have windows powershell, I would advise downloading it from the Microsoft Store. Otherwise, you can try running the following steps from your regular terminal/command prompt. &lt;/p&gt;
+&lt;p&gt;2) Run the following command in windows powershell: &lt;/p&gt;
+&lt;p&gt;dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart&lt;/p&gt;
+&lt;p&gt;3) This leads us into our next step which is to install debian. Head over to the microsoft store on your windows machine and search for &amp;quot;debian&amp;quot;. Install the application as depicted in the following image. 
+&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dbo1mhm13bqdtpfin1yh.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;4) Next open up debian either through the microsoft store or by searching for it in the search bar. &lt;/p&gt;
+&lt;p&gt;Run the following commands in order. &lt;/p&gt;
+&lt;p&gt;$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get install zsh
+$ zsh
+$ sudo apt-get install curl
+sh -c &amp;quot;$(curl -fsSL &lt;a href=&quot;https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh&quot;&gt;https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh&lt;/a&gt;)&amp;quot;&lt;/p&gt;
+&lt;p&gt;5) Restart debian and make sure that you see .zsh somewhere in the terminal. This lets you know that you have installed zsh correctly. &lt;/p&gt;
+&lt;p&gt;6) Next we will be installing the node within zsh. &lt;/p&gt;
+&lt;p&gt;Understanding how Node works and its primary function is important. As referenced on medium.com, &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Node allows you to execute Javascript code outside of the browser, in a computing environment (such as a server or local development environment) rather then a browser environment.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In laymans terms, node essentially enables an individual to execute their code in a sandbox environment. (Without causing any real damage). Think of it like practicing an idea for a painting on a sheet of printer paper before starting on the canvas. &lt;/p&gt;
+&lt;p&gt;Run the following command:&lt;/p&gt;
+&lt;p&gt;$ sudo apt-get install build-essential&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/u91t9kbyz8ik6mtt095g.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;7) Run the following command:&lt;/p&gt;
+&lt;p&gt;curl -o- &lt;a href=&quot;https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh&quot;&gt;https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh&lt;/a&gt; | bash&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/sxhwjmcpojq8nhm0y0x4.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;8) Make sure that you have VSCODE installed before you proceed. If you do not have vscode installed, follow the steps linked in this video and then come back. --&amp;gt; &lt;a href=&quot;https://www.youtube.com/watch?v=V3o57MU5eoE&quot;&gt;&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Run the following command:&lt;/p&gt;
+&lt;p&gt;code ~/.zshrc&lt;/p&gt;
+&lt;p&gt;This will open up vscode with a file. Click on the .zshrc tab and paste the following code after the last line. &lt;/p&gt;
+&lt;p&gt;export NVM_DIR=&amp;quot;$HOME/.nvm&amp;quot;
+[ -s &amp;quot;$NVM_DIR/nvm.sh&amp;quot; ] &amp;amp;&amp;amp; . &amp;quot;$NVM_DIR/nvm.sh&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/sew4kw6zxfohtk9usi9g.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Save the VSCODE file (Ctrl + S), then exit VSCODE. &lt;/p&gt;
+&lt;p&gt;9) Open up debian and run the following command:&lt;/p&gt;
+&lt;p&gt;nvm install --lts
+&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/k6w7p1c72fsyxrm9bqhd.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Next run this command: nvm use --lts&lt;/p&gt;
+&lt;p&gt;Nice Work! &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Starting with open-wc&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Now we will take our first dive into working with open-wc. &lt;/p&gt;
+&lt;p&gt;1) Before we get started, you will need to create your github account and a repository. Follow the steps in this &lt;a href=&quot;https://www.youtube.com/watch?v=QUtk-Uuq9nE&quot;&gt;video &lt;/a&gt;then proceed to the next step. &lt;/p&gt;
+&lt;p&gt;2) Next, you will need to establish a secure, SSH key based handshake with github. Follow the steps in this &lt;a href=&quot;https://docs.github.com/en/authentication/connecting-to-github-with-ssh&quot;&gt;article &lt;/a&gt; to complete this task, then proceed to the next step. &lt;/p&gt;
+&lt;p&gt;3) Open your terminal (windows key  + r --&amp;gt; type in cmd in run box). Next you will need to navigate your github repo that you created. &lt;/p&gt;
+&lt;p&gt;Find your github repo in your file explorer and right click the file to copy the path to your clipboard. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wphs8dkl3icm74w31mcl.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;In your terminal, type cd then paste in the file path. 
+This should change your directory to your github repo that you created. &lt;/p&gt;
+&lt;p&gt;4) In the terminal type npm init @open-wc. Wait for the terminal to complete its processing. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mcf0ai8ykt9xqxhdoqtn.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;5) You should now see a gui that prompts you with some options. 
+Navigate through the UI to select the following options:&lt;/p&gt;
+&lt;p&gt;What would you like to do today? &amp;gt;&amp;gt; Scaffold a new project
+What would you like to scaffold?&amp;gt;&amp;gt; Web Component
+What would you like to add &lt;em&gt;(just click enter)&lt;/em&gt; &amp;gt;&amp;gt; 
+Would you like to use typescript? &amp;gt;&amp;gt; No&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;for the following option, replace what follows hello-world with whatever you would like &lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;What is the tagname of your web component &amp;gt;&amp;gt; hello-world_RajivLab1&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7nm9jm448nhcgl6ojvj2.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Write the file to disk and install dependencies. &lt;/p&gt;
+&lt;p&gt;6) Follow the instructions in the terminal. 
+Change the directory to your web component and then run the following command:&lt;/p&gt;
+&lt;p&gt;npm run start &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9lecqublj3pv5k8y0b2m.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;7) A browser should pop up with localhost in the address. Right click this page and click &amp;quot;view page source&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/u1r3y5j4itpiqyf63zca.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;You now have access to the source code of this page. &lt;/p&gt;
+&lt;p&gt;8) Now lets go ahead and begin to decipher what this code is asking of us. Right click and select &amp;quot;Save as&amp;quot; to download the page. &lt;/p&gt;
+&lt;p&gt;9) Drag this downloaded file into vscode so that we can comment on the file and start to decipher what the code is doing.&lt;/p&gt;
+&lt;p&gt;If this is your first time with JavaScript, start by copy and pasting each line of code into google to try and make sense of it. Leave a comment by typing //your_comment_goes_here to annotate what you believe the code is doing. &lt;/p&gt;
+&lt;p&gt;This &lt;a href=&quot;https://lit.dev/playground/#sample=examples/full-component&quot;&gt;article &lt;/a&gt;will help.    &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;You can access my first ever interaction with this code snippet on my Github which is linked &lt;a href=&quot;https://github.com/RajivThummala-psu/ist402_lab1/blob/main/localhost.htm&quot;&gt;here&lt;/a&gt;. Thank you for reading this article and I wish you good luck on the rest of your JavaScript journey. &lt;/p&gt;
 </content>
   </entry>
   
   <entry>
-    <title>Examples</title>
+    <title>My Dev.to Posts</title>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/"/>
-    <updated>2022-03-05T19:41:20.620-00:00</updated>
+    <updated>2022-03-05T20:43:56.999-00:00</updated>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/</id>
-    <content type="html">&lt;p&gt;Have an example site in production using HAX11ty? We&#39;d love to highlight it and spread the good vibes! Contact us and make sure to click around to the other great examples of HAX11ty out there in the wild&lt;/p&gt;
+    <content type="html">&lt;p&gt;This is my redo of the 11ty HAX. Hopefully this works. My name is Rajiv Thummala. Check out my different blog posts!&lt;/p&gt;
 </content>
   </entry>
 </feed>

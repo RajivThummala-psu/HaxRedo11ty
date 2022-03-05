@@ -1,5 +1,5 @@
 {
-  "id": "#85fa3937-93ea-bca4-0133-190ffaa8f2e9",
+  "id": "#cb186d10-7f6e-800b-f708-bec80916a3e8",
   "title": "HaxRedo11ty",
   "author": "RajivThummala-psu",
   "description": "project documentation",
@@ -13,8 +13,8 @@
     },
     "site": {
       "name": "HaxRedo11ty",
-      "created": 1646509303012,
-      "updated": 1646509303012,
+      "created": 1646513060165,
+      "updated": 1646513060165,
       "git": {
         "autoPush": false,
         "branch": "master",
@@ -54,13 +54,13 @@
       "location": "./pages/posts/HAXTeam.md",
       "slug": "content/posts/HAXTeam/",
       "order": -100,
-      "title": "HAXTheWeb",
-      "description": "HAXTheWeb",
+      "title": "An introduction to open-wc",
+      "description": "An introduction to open-wc",
       "parent": "--content-posts-index-md",
       "metadata": {
-        "created": 1646509281,
-        "updated": 1646509281,
-        "readtime": 1,
+        "created": 1646513037,
+        "updated": 1646513037,
+        "readtime": 8,
         "contentDetails": {},
         "files": [],
         "haxcmsServiceWorker": true,
@@ -68,7 +68,7 @@
           "content"
         ],
         "layout": "content.liquid",
-        "title": "HAXTheWeb",
+        "title": "An introduction to open-wc",
         "order": -100
       }
     },
@@ -82,8 +82,8 @@
       "description": "Community examples",
       "parent": "--content-posts-index-md",
       "metadata": {
-        "created": 1646509281,
-        "updated": 1646509281,
+        "created": 1646513037,
+        "updated": 1646513037,
         "readtime": 1,
         "contentDetails": {},
         "files": [],
@@ -102,12 +102,12 @@
       "location": "./pages/posts/index.md",
       "slug": "content/posts/",
       "order": 1,
-      "title": "Examples",
-      "description": "Examples",
+      "title": "My Dev.to Posts",
+      "description": "My Dev.to Posts",
       "parent": null,
       "metadata": {
-        "created": 1646509281,
-        "updated": 1646509281,
+        "created": 1646513037,
+        "updated": 1646513037,
         "readtime": 1,
         "contentDetails": {},
         "files": [],
@@ -116,7 +116,7 @@
           "content"
         ],
         "layout": "content.liquid",
-        "title": "Examples",
+        "title": "My Dev.to Posts",
         "order": 1
       }
     },
@@ -130,8 +130,8 @@
       "description": "This is Rajiv's redo of the hax11ty",
       "parent": null,
       "metadata": {
-        "created": 1646509281,
-        "updated": 1646509281,
+        "created": 1646513037,
+        "updated": 1646513037,
         "readtime": 1,
         "contentDetails": {},
         "files": [],
