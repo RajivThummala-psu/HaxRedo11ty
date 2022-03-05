@@ -3,7 +3,7 @@
   <title>HaxRedo11ty</title>
   <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/atom.xml" rel="self" />
   <subtitle>project documentation</subtitle>
-  <updated>2022-03-05T20:43:56.999-00:00</updated>
+  <updated>2022-03-05T20:54:51.927-00:00</updated>
   <author>
       <name>RajivThummala-psu</name>
   </author>
@@ -11,8 +11,8 @@
   <entry>
     <title>This is Rajiv&#39;s redo of the hax11ty</title>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/home/</id>
-    <updated>2022-03-05T20:43:56.999-00:00</updated>
-    <published>2022-03-05T20:43:56.999-00:00</published>
+    <updated>2022-03-05T20:54:51.927-00:00</updated>
+    <published>2022-03-05T20:54:51.927-00:00</published>
     <summary></summary>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/home/"/>
     <content type="html">
@@ -29,22 +29,136 @@
     </content>
   </entry>
   <entry>
-    <title>Community examples</title>
+    <title>Feeding IP addresses into the API of GeoIP to Obtain Geographic Coordinates (Lat/Long)</title>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/Community/</id>
-    <updated>2022-03-05T20:43:56.999-00:00</updated>
-    <published>2022-03-05T20:43:56.999-00:00</published>
+    <updated>2022-03-05T20:54:51.927-00:00</updated>
+    <published>2022-03-05T20:54:51.927-00:00</published>
     <summary></summary>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/Community/"/>
     <content type="html">
-      &lt;p&gt;Have an example site in production using HAX11ty? &lt;a href=&quot;../contact&quot;&gt;Contact us&lt;/a&gt; to let us know or &lt;a href=&quot;https://github.com/elmsln/hax11ty/tree/master/src/content&quot;&gt;add a PR via github&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;This will be a brief synopsis and run through on how latitude and longitude coordinates can be detected via GeoIP. Particularly, by feeding IP addresses into the GeoIP API. You can follow along with my &lt;a href=&quot;https://github.com/RajivThummala-psu/ip-project/blob/master/src/LocationFromIP.js&quot;&gt;github repo&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Before we get started, let&amp;#39;s import the necessary dependencies within your project. Since we are going to be wiring up the data to a wikipedia-query tag, we will need to import the following dependency: @lrnwebcomponents/wikipedia-query/wikipedia-query.js&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Make sure you are using the right syntax&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/r8ycv2suy22w095bxten.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;To complete the setup process we will also need to do npm install @lrnwebcomponents/wikipedia-query&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/csmpiw6tqrlsky52cf0y.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;As you parse through the constructor repo, you will notice that the first API you run into is: &lt;strong&gt;&lt;a href=&quot;https://freegeoip.app/json/&quot;&gt;https://freegeoip.app/json/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is the GeoIP API. Unfortunately, at the time of this writing, the server is down so I am unable to provide an overview of all the services this API offers in particular. However, you can head over to this link to poke around. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vyob9fdinxuv9lscbl5k.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Deciphering the GeoIP API?&lt;/strong&gt;
+&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/s433cvg4apylswqwr78k.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;You will notice that the geoip is set to the locationEndpoint. &lt;/p&gt;
+&lt;p&gt;An endpoint, as adumbrated by &lt;a href=&quot;https://smartbear.com/learn/performance-monitoring/api-endpoints/#:~:text=Each%20endpoint%20is%20the%20location,to%20carry%20out%20their%20function.&amp;amp;text=The%20place%20that%20APIs%20send,lives%2C%20is%20called%20an%20endpoint.&quot;&gt;smartbear.com&lt;/a&gt;, enables  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;APIs to transfer vital information, processes, transactions, and more. API usage will only increase as time goes on, and making sure that each touchpoint in API communication is intact is vital to the success of each API. Endpoints specify where resources can be accessed by APIs and play a key role in guaranteeing the correct functioning of the software that interacts with it.  In short, API performance relies on its ability to communicate effectively with API Endpoints.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Thus, this will serve as an endpoint in which the GeoAPI will retrieve information regarding the client&amp;#39;s location to carry out an operation. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fcs1fkmabm1x55j3lrhg.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;You will also notice that GeoIP is referenced in the async getGeoIPData() method. Let&amp;#39;s take some time to pick apart what is going on here.&lt;/p&gt;
+&lt;p&gt;`async getGEOIPData() {
+    const IPClass = new UserIP();
+    const userIPData = await IPClass.updateUserIP();
+    return fetch(this.locationEndpoint + userIPData.ip)
+      .then(resp =&amp;gt; {
+        if (resp.ok) {
+          return resp.json();
+        }
+        return false;
+      })
+      .then(data =&amp;gt; {&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    console.log(&lt;span class=&quot;hljs-keyword&quot;&gt;data&lt;/span&gt;);
+    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.state = &lt;span class=&quot;hljs-keyword&quot;&gt;data&lt;/span&gt;.region_name; &lt;span class=&quot;hljs-comment&quot;&gt;//avoided making the same mistake as last time (reminder --&amp;gt; region name)&lt;/span&gt;
+    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.city = &lt;span class=&quot;hljs-keyword&quot;&gt;data&lt;/span&gt;.city;
+    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.location = `${&lt;span class=&quot;hljs-keyword&quot;&gt;data&lt;/span&gt;.city}, ${&lt;span class=&quot;hljs-keyword&quot;&gt;data&lt;/span&gt;.state}`;
+    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.lat = &lt;span class=&quot;hljs-keyword&quot;&gt;data&lt;/span&gt;.latitude; 
+    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.long = &lt;span class=&quot;hljs-keyword&quot;&gt;data&lt;/span&gt;.longitude;
+&lt;pre&gt;&lt;code&gt;console.log(`Your coordinates: ${&amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;this&amp;lt;/span&amp;gt;.lat} ${&amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;this&amp;lt;/span&amp;gt;.long}`);
+&amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;return&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;data&amp;lt;/span&amp;gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;});`
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To make it easier, lets split this up into 2 parts to get a better understanding: Obtain information from the API &amp;amp; Feed into LitElement based web component to provide stateful updating of the DOM&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Obtain information from the API&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Lets begin by taking a look at this segment:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;async getGEOIPData() {
+    const IPClass = new UserIP();
+    const userIPData = await IPClass.updateUserIP();
+    return fetch(this.locationEndpoint + userIPData.ip)
+      .then(resp =&amp;gt; {
+        if (resp.ok) {
+          return resp.json();
+        }
+        return false;
+      })&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The fetch command in particular should strike you as new if you have not worked with this language much. It was for me atleast. However, you will quickly learn from a google search that it works similar to the throw and catch commands from java. &lt;/p&gt;
+&lt;p&gt;What is happening here is that the program is essentially throwing out a mandatory request for the program to provide information regarding the location endpoint, which we instantiated in the constructor. If the program does not get a response, it will catch it (through returning false in this case). As stated earlier, the location endpoint serves as a checkpoint for the API to retrieve information regarding the client&amp;#39;s location. &lt;/p&gt;
+&lt;p&gt;What you will notice also is that &amp;quot;userIPData.ip&amp;quot; is also being fetched. Lets take a look at this further. You can follow along in my repo if that is easier!&lt;/p&gt;
+&lt;p&gt;`async updateUserIP() {
+    return fetch(this.ipLookUp)
+      .then(resp =&amp;gt; {
+        if (resp.ok) {
+          return resp.json();
+        }
+        return false;
+      })
+      .then(data =&amp;gt; {
+        this.ip = data.ip;
+        this.cityYouAreIn = data.city;
+        this.countryYouAreIn = data.country;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.location = `${&lt;span class=&quot;hljs-keyword&quot;&gt;data&lt;/span&gt;.city}, ${&lt;span class=&quot;hljs-keyword&quot;&gt;data&lt;/span&gt;.country}`;
+&lt;pre&gt;&lt;code&gt;&amp;lt;span class=&amp;quot;hljs-comment&amp;quot;&amp;gt;// this.location = &amp;quot;Your location is: &amp;quot; + data.cityYouAreIn+ &amp;quot;, &amp;quot; + data.countryYouAreIn; //understood that the data. references the getproperties method&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;return&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;data&amp;lt;/span&amp;gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;});
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;  }`&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;We will notice here that the updateUserIP method is being used to retrieve information regarding the user&amp;#39;s ip address and listing readable info regarding their whereabouts (city &amp;amp; country). It is also fetching ipLookUP (&lt;a href=&quot;https://ip-fast.com/api/ip/?format=json&amp;amp;location=True&quot;&gt;https://ip-fast.com/api/ip/?format=json&amp;amp;location=True&lt;/a&gt;), which can be found in the constructor in this file. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oa1uuy43jdvn5qx14amy.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;ipLookup references an API called ip-fast. ip-fast is an API that analyzes the client&amp;#39;s network activity to approximate their location. In case of error, it will return false to catch. &lt;/p&gt;
+&lt;p&gt;Both of these API&amp;#39;s are thus added together to obtain the geoIPdata. Therefore, what we essentially have here in the async getGEOIPData() method enables us to leverage 2 APIs to retrieve the information that we need. But what do we do now that the data has been fetched?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Feed into LitElement based web component to provide stateful updating of the DOM&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;`  })
+      .then(data =&amp;gt; {&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.state = &lt;span class=&quot;hljs-keyword&quot;&gt;data&lt;/span&gt;.region_name; &lt;span class=&quot;hljs-comment&quot;&gt;//avoided making the same mistake as last time (reminder --&amp;gt; region name)&lt;/span&gt;
+    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.city = &lt;span class=&quot;hljs-keyword&quot;&gt;data&lt;/span&gt;.city;
+    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.location = `${&lt;span class=&quot;hljs-keyword&quot;&gt;data&lt;/span&gt;.city}, ${&lt;span class=&quot;hljs-keyword&quot;&gt;data&lt;/span&gt;.state}`;
+    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.lat = &lt;span class=&quot;hljs-keyword&quot;&gt;data&lt;/span&gt;.latitude; 
+    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.long = &lt;span class=&quot;hljs-keyword&quot;&gt;data&lt;/span&gt;.longitude;
+&lt;pre&gt;&lt;code&gt;console.log(`Your coordinates: ${&amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;this&amp;lt;/span&amp;gt;.lat} ${&amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;this&amp;lt;/span&amp;gt;.long}`);
+&amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;return&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;data&amp;lt;/span&amp;gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;});`
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now if we take a look at this second half of the method, we will notice that the data is actually being entered into the console for use. When I first ran into this section of the program, I actually found it quite easy to interpret despite being unfamiliar with this syntax. &lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;We start of with &amp;quot;then the data&amp;quot;...&lt;/p&gt;
+&lt;p&gt;Is used to retrieve information regarding the client&amp;#39;s state. You must call for state through region_name as opposed to just data.state (don&amp;#39;t make the same mistake I did). Next you can see that the city and location are retrieved. We also add both latitude and longitude into our instances so that we can obtain the geographical coordinates. Ensure that you are doing data.latitude and data.longitude NOT data.lat and data.long. &lt;/p&gt;
+&lt;p&gt;These instances are then simply fed into the console.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;console.log(&lt;/code&gt;Your coordinates: ${this.lat} ${this.long}&lt;code&gt;);
+        return data;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;From here, all you have to do is render. I referenced &lt;a href=&quot;https://codepen.io/btopro/pen/yLNmVbw&quot;&gt;btopro&amp;#39;s codepen&lt;/a&gt; to do this, as you can see in my repo. &lt;/p&gt;
+&lt;p&gt;After copious efforts getting all the bugs out of my code, I am close to getting an accurate solution. I will continue to update the repo as I optimize the program.&lt;/p&gt;
+&lt;p&gt;As you can see, leveraging public API&amp;#39;s to perform functions are seamless and potent. There are a multitude of micro services across the web that can be utilized to achieve a goal in a non-taxing manner. &lt;/p&gt;
+&lt;p&gt;NASA Rendering in particular is a great one, which provides the ability to render images from NASA by leveraging their &lt;a href=&quot;https://api.nasa.gov/api.html#apod&quot;&gt;public api&lt;/a&gt;. This enables individuals that are not affiliated with NASA to easily access this large stack of information with ease. &lt;/p&gt;
+&lt;p&gt;As highlighted by &lt;a href=&quot;https://wilsjame.github.io/how-to-nasa/&quot;&gt;wilsjame&lt;/a&gt;, these are just some of the &lt;a href=&quot;https://api.nasa.gov/api.html#apod&quot;&gt;many APIs&lt;/a&gt; that can be used: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Near Earth Object Web Service (NeoWs): Access to near Earth asteroid information.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Earth Polychromatic Imaging Camera (EPIC): Full disc imagery of the Earth.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Earth Observatory Natural Event Tracker (EONET): Prototype web service providing continuously updated natural event metadata, such as storm imagery, gathered from the Earth’s surface.
+NASA Image and Video Library: Access to the NASA Image and Video Library.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Sounds (beta): Access to space sounds via SoundClound with some of the hassle abstracted away.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;NASA rendering; render images from NASA using their public API to render the data&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Good luck on your attempt and I thank you for taking your time to read this post. &lt;/p&gt;
 
     </content>
   </entry>
   <entry>
     <title>An introduction to open-wc</title>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/HAXTeam/</id>
-    <updated>2022-03-05T20:43:56.999-00:00</updated>
-    <published>2022-03-05T20:43:56.999-00:00</published>
+    <updated>2022-03-05T20:54:51.927-00:00</updated>
+    <published>2022-03-05T20:54:51.927-00:00</published>
     <summary></summary>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/HAXTeam/"/>
     <content type="html">
@@ -153,14 +267,52 @@ Change the directory to your web component and then run the following command:&l
     </content>
   </entry>
   <entry>
+    <title>Feeding IP addresses into the API of GeoIP to Obtain Geographic Coordinates (Lat/Long)</title>
+    <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/dockerlab/</id>
+    <updated>2022-03-05T20:54:51.927-00:00</updated>
+    <published>2022-03-05T20:54:51.927-00:00</published>
+    <summary></summary>
+    <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/dockerlab/"/>
+    <content type="html">
+      &lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/t2kuu6bmcqr4975els0h.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
+&lt;p&gt;First started in 2013, Docker is a set of platform as a service products that leverage OS-level virtualization to deliver software in containers. &lt;/p&gt;
+&lt;p&gt;Containers make it easy to put new versions of software, with new business features, into production quickly-and to quickly roll back to a previous version if you need to. A form of virtualization, one single container can be utilized to run anything from a small microservice or software process to a larger application. Inside a container are all the necessary executables, binary code, libraries, and configuration files. Thus, docker is so powerful due to its ability to facilitate the microservice deployment process by leveraging containers to run across different computing environments. &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;To begin, lets ensure that you have a rudimentary understanding of how docker functions. Please run through &lt;a href=&quot;https://www.docker.com/play-with-docker&quot;&gt;this tutorial&lt;/a&gt; if you are not familiar with docker. &lt;/p&gt;
+&lt;p&gt;If you are not running through the tutorial, ensure that you have your own server through Docker. If you are stuck on this, please run through the aforementioned tutorial. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/uxuec84i6jwn9ka0ltkq.png&quot; alt=&quot;Your screen should like like this&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The NASA Image Search Repository already has some adequate functionality. Leveraging microservices, the application can be deployed in a non-taxing way that does not increase in complexity as it is transferred between computing environments. However, there is one way to optimize this deployment: containers. Docker will help us integrate our microservices into containers and will consequently avoid becoming a monolithic application. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Setup&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Create ADD NEW INSTANCE in the Docker Playground. Run the following command in the new instance console.
+&lt;code&gt;git clone &lt;a href=&quot;https://github.com/IST402-Group-E/ip&quot;&gt;https://github.com/IST402-Group-E/ip&lt;/a&gt; project/blob/master/src/Nasa.js &amp;amp;&amp;amp; cd Nasa.js&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Configure&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Before we ran any Docker commands, we need to configure our custom settings for this application. These settings will be an API key and the url of your Play With Docker instance.&lt;/p&gt;
+&lt;p&gt;Run the following command to set up a fresh copy of your environment settings.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cp dot.env.example dot.env&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;What we just done is created a new file called dot.env. Following the configuration as code principle, we are going to add our applications custom settings via environment variables. Docker relies on this pattern to ensure the application thats running inside of it is stateless.&lt;/p&gt;
+&lt;p&gt;Now we need to populate those settings.&lt;/p&gt;
+&lt;p&gt;Select the EDITOR button in your docker lab (it is to the right of the orange DELETE button)&lt;/p&gt;
+&lt;p&gt;Now we need to obtain our api key, which will be our unique password for requesting a new query. Head over to api.nasa.gov to signup and generate an api key for NASA Image search. &lt;/p&gt;
+&lt;p&gt;Obtain this key and then insert it into dot.env (replace it with XXXXXXX)&lt;/p&gt;
+&lt;p&gt;Now select open port in docker
+Type 4000 into the prompt and click &amp;quot;Ok&amp;quot;.&lt;/p&gt;
+&lt;p&gt;You should see a new page that is blank since there is no running application yet. COPY the url that blank page. That&amp;#39;s were our server will be accessible when we get this thing running.&lt;/p&gt;
+&lt;p&gt;Now that we have the public url we can add it to our dot.env and click &amp;quot;Save&amp;quot;&lt;/p&gt;
+&lt;p&gt;Now just head over to docker and start up the application&lt;/p&gt;
+&lt;p&gt;Run the following command in your terminal: docker-compose-up. Select port 80 to view our application!&lt;/p&gt;
+
+    </content>
+  </entry>
+  <entry>
     <title>My Dev.to Posts</title>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/</id>
-    <updated>2022-03-05T20:43:56.999-00:00</updated>
-    <published>2022-03-05T20:43:56.999-00:00</published>
+    <updated>2022-03-05T20:54:51.927-00:00</updated>
+    <published>2022-03-05T20:54:51.927-00:00</published>
     <summary></summary>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/"/>
     <content type="html">
       &lt;p&gt;This is my redo of the 11ty HAX. Hopefully this works. My name is Rajiv Thummala. Check out my different blog posts!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/sk4m9bc0o7hoh3otbfvd.jpeg&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
 
     </content>
   </entry>

@@ -1,5 +1,5 @@
 {
-  "id": "#cb186d10-7f6e-800b-f708-bec80916a3e8",
+  "id": "#d3314888-cce4-9b40-cf9a-d600aeb562e6",
   "title": "HaxRedo11ty",
   "author": "RajivThummala-psu",
   "description": "project documentation",
@@ -13,8 +13,8 @@
     },
     "site": {
       "name": "HaxRedo11ty",
-      "created": 1646513060165,
-      "updated": 1646513060165,
+      "created": 1646513715754,
+      "updated": 1646513715754,
       "git": {
         "autoPush": false,
         "branch": "master",
@@ -58,8 +58,8 @@
       "description": "An introduction to open-wc",
       "parent": "--content-posts-index-md",
       "metadata": {
-        "created": 1646513037,
-        "updated": 1646513037,
+        "created": 1646513692,
+        "updated": 1646513692,
         "readtime": 8,
         "contentDetails": {},
         "files": [],
@@ -78,13 +78,13 @@
       "location": "./pages/posts/Community.md",
       "slug": "content/posts/Community/",
       "order": 1,
-      "title": "Community examples",
-      "description": "Community examples",
+      "title": "Feeding IP addresses into the API of GeoIP to Obtain Geographic Coordinates (Lat/Long)",
+      "description": "Feeding IP addresses into the API of GeoIP to Obtain Geographic Coordinates (Lat/Long)",
       "parent": "--content-posts-index-md",
       "metadata": {
-        "created": 1646513037,
-        "updated": 1646513037,
-        "readtime": 1,
+        "created": 1646513692,
+        "updated": 1646513692,
+        "readtime": 7,
         "contentDetails": {},
         "files": [],
         "haxcmsServiceWorker": true,
@@ -92,7 +92,31 @@
           "content"
         ],
         "layout": "content.liquid",
-        "title": "Community examples",
+        "title": "Feeding IP addresses into the API of GeoIP to Obtain Geographic Coordinates (Lat/Long)",
+        "order": 1
+      }
+    },
+    {
+      "id": "--content-posts-dockerlab-md",
+      "indent": 0,
+      "location": "./pages/posts/dockerlab.md",
+      "slug": "content/posts/dockerlab/",
+      "order": 1,
+      "title": "Feeding IP addresses into the API of GeoIP to Obtain Geographic Coordinates (Lat/Long)",
+      "description": "Feeding IP addresses into the API of GeoIP to Obtain Geographic Coordinates (Lat/Long)",
+      "parent": "--content-posts-index-md",
+      "metadata": {
+        "created": 1646513692,
+        "updated": 1646513692,
+        "readtime": 3,
+        "contentDetails": {},
+        "files": [],
+        "haxcmsServiceWorker": true,
+        "tags": [
+          "content"
+        ],
+        "layout": "content.liquid",
+        "title": "Feeding IP addresses into the API of GeoIP to Obtain Geographic Coordinates (Lat/Long)",
         "order": 1
       }
     },
@@ -106,8 +130,8 @@
       "description": "My Dev.to Posts",
       "parent": null,
       "metadata": {
-        "created": 1646513037,
-        "updated": 1646513037,
+        "created": 1646513692,
+        "updated": 1646513692,
         "readtime": 1,
         "contentDetails": {},
         "files": [],
@@ -130,8 +154,8 @@
       "description": "This is Rajiv's redo of the hax11ty",
       "parent": null,
       "metadata": {
-        "created": 1646513037,
-        "updated": 1646513037,
+        "created": 1646513692,
+        "updated": 1646513692,
         "readtime": 1,
         "contentDetails": {},
         "files": [],
