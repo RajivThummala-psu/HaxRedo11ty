@@ -38,28 +38,24 @@
 'use strict';
 var precacheConfig = [
   [
-    "/HaxRedo11ty/content/home/",
-    "XHUfiwTgCwzqnUO2"
-  ],
-  [
     "/HaxRedo11ty/content/posts/Community/",
-    "XHUfiwTgCwzqnUO2"
-  ],
-  [
-    "/HaxRedo11ty/content/posts/dockerlab/",
-    "XHUfiwTgCwzqnUO2"
+    "8HDHRSQttuSmwU8M"
   ],
   [
     "/HaxRedo11ty/content/posts/HAXTeam/",
-    "XHUfiwTgCwzqnUO2"
+    "8HDHRSQttuSmwU8M"
+  ],
+  [
+    "/HaxRedo11ty/content/posts/dockerlab/",
+    "8HDHRSQttuSmwU8M"
   ],
   [
     "/HaxRedo11ty/content/posts/",
-    "XHUfiwTgCwzqnUO2"
+    "8HDHRSQttuSmwU8M"
   ],
   [
     "/HaxRedo11ty/",
-    "XHUfiwTgCwzqnUO2"
+    "8HDHRSQttuSmwU8M"
   ]
 ];
 var cacheName = 'sw-precache-v3--' + (self.registration ? self.registration.scope : '');

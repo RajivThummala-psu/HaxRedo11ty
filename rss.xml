@@ -4,7 +4,7 @@
   <subtitle>project documentation</subtitle>
   <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/rss.xml" rel="self"/>
   <link href="https://RajivThummala-psu.github.io/HaxRedo11ty"/>
-  <updated>2022-03-05T20:58:07.256-00:00</updated>
+  <updated>2022-03-05T21:01:44.826-00:00</updated>
   <id>https://RajivThummala-psu.github.io/HaxRedo11ty</id>
   <author>
     <name>RajivThummala-psu</name>
@@ -12,26 +12,9 @@
   </author>
   
   <entry>
-    <title>This is Rajiv&#39;s redo of the hax11ty</title>
-    <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/home/"/>
-    <updated>2022-03-05T20:58:07.252-00:00</updated>
-    <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/home/</id>
-    <content type="html">&lt;p&gt;&lt;ul&gt;
-    RAJIV ATTEMPT AT HAX 11TY!!!!
-&lt;/ul&gt;&lt;/p&gt;
-&lt;h3&gt;HOME PAGE OF HAX11TY&lt;/h3&gt;
-&lt;p&gt;This is for IST 402 Lab 6
-&lt;ul&gt;
-    &lt;li&gt;Rajiv Thummala&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;
-</content>
-  </entry>
-  
-  <entry>
     <title>Feeding IP addresses into the API of GeoIP to Obtain Geographic Coordinates (Lat/Long)</title>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/Community/"/>
-    <updated>2022-03-05T20:58:07.252-00:00</updated>
+    <updated>2022-03-05T21:01:44.826-00:00</updated>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/Community/</id>
     <content type="html">&lt;p&gt;This will be a brief synopsis and run through on how latitude and longitude coordinates can be detected via GeoIP. Particularly, by feeding IP addresses into the GeoIP API. You can follow along with my &lt;a href=&quot;https://github.com/RajivThummala-psu/ip-project/blob/master/src/LocationFromIP.js&quot;&gt;github repo&lt;/a&gt;. &lt;/p&gt;
 &lt;p&gt;Before we get started, let&amp;#39;s import the necessary dependencies within your project. Since we are going to be wiring up the data to a wikipedia-query tag, we will need to import the following dependency: @lrnwebcomponents/wikipedia-query/wikipedia-query.js&lt;/p&gt;
@@ -154,7 +137,7 @@ NASA Image and Video Library: Access to the NASA Image and Video Library.&lt;/p&
   <entry>
     <title>An introduction to open-wc</title>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/HAXTeam/"/>
-    <updated>2022-03-05T20:58:07.256-00:00</updated>
+    <updated>2022-03-05T21:01:44.826-00:00</updated>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/HAXTeam/</id>
     <content type="html">&lt;p&gt;Upon dipping your feet into the behemoth that is web development, you will quickly realize how non-static this field is. Everything is constantly changing and evolving, from updates to web protocols to constant syntax alterations. Consequently, a 1337 developer must periodically update their toolkit with the new fads and revolutions within the industry. &lt;/p&gt;
 &lt;p&gt;With a sector that is never static, it is vital that the fundamentals of web development are mastered to provide a base in expanding a developer&amp;#39;s toolkit. Perhaps one of the most important fundamentals to grasp is the basics of JavaScript. As adumbrated by tutorialspoint:&lt;/p&gt;
@@ -263,7 +246,7 @@ Change the directory to your web component and then run the following command:&l
   <entry>
     <title>Generating a Docker File for your NASA Image Search Repo</title>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/dockerlab/"/>
-    <updated>2022-03-05T20:58:07.256-00:00</updated>
+    <updated>2022-03-05T21:01:44.826-00:00</updated>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/dockerlab/</id>
     <content type="html">&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/t2kuu6bmcqr4975els0h.png&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;
 &lt;p&gt;First started in 2013, Docker is a set of platform as a service products that leverage OS-level virtualization to deliver software in containers. &lt;/p&gt;
@@ -297,7 +280,7 @@ Type 4000 into the prompt and click &amp;quot;Ok&amp;quot;.&lt;/p&gt;
   <entry>
     <title>My Dev.to Posts</title>
     <link href="https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/"/>
-    <updated>2022-03-05T20:58:07.256-00:00</updated>
+    <updated>2022-03-05T21:01:44.826-00:00</updated>
     <id>https://RajivThummala-psu.github.io/HaxRedo11ty/content/posts/</id>
     <content type="html">&lt;p&gt;This is my redo of the 11ty HAX. Hopefully this works. My name is Rajiv Thummala. Check out my different blog posts!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/sk4m9bc0o7hoh3otbfvd.jpeg&quot; alt=&quot;Image description&quot;&gt;&lt;/p&gt;

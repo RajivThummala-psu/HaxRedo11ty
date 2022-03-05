@@ -1,5 +1,5 @@
 {
-  "id": "#8aa48c9e-12d2-ba5d-c409-0a4b6c9f9b25",
+  "id": "#511bf4f3-9e18-c0d4-45a1-f3218bdfb18c",
   "title": "HaxRedo11ty",
   "author": "RajivThummala-psu",
   "description": "project documentation",
@@ -13,8 +13,8 @@
     },
     "site": {
       "name": "HaxRedo11ty",
-      "created": 1646513912944,
-      "updated": 1646513912944,
+      "created": 1646514128958,
+      "updated": 1646514128958,
       "git": {
         "autoPush": false,
         "branch": "master",
@@ -58,8 +58,8 @@
       "description": "An introduction to open-wc",
       "parent": "--content-posts-index-md",
       "metadata": {
-        "created": 1646513887,
-        "updated": 1646513887,
+        "created": 1646514105,
+        "updated": 1646514105,
         "readtime": 8,
         "contentDetails": {},
         "files": [],
@@ -82,8 +82,8 @@
       "description": "Feeding IP addresses into the API of GeoIP to Obtain Geographic Coordinates (Lat/Long)",
       "parent": "--content-posts-index-md",
       "metadata": {
-        "created": 1646513887,
-        "updated": 1646513887,
+        "created": 1646514105,
+        "updated": 1646514105,
         "readtime": 7,
         "contentDetails": {},
         "files": [],
@@ -106,8 +106,8 @@
       "description": "Generating a Docker File for your NASA Image Search Repo",
       "parent": "--content-posts-index-md",
       "metadata": {
-        "created": 1646513887,
-        "updated": 1646513887,
+        "created": 1646514105,
+        "updated": 1646514105,
         "readtime": 3,
         "contentDetails": {},
         "files": [],
@@ -130,8 +130,8 @@
       "description": "My Dev.to Posts",
       "parent": null,
       "metadata": {
-        "created": 1646513887,
-        "updated": 1646513887,
+        "created": 1646514105,
+        "updated": 1646514105,
         "readtime": 1,
         "contentDetails": {},
         "files": [],
@@ -142,30 +142,6 @@
         "layout": "content.liquid",
         "title": "My Dev.to Posts",
         "order": 1
-      }
-    },
-    {
-      "id": "--content-home-md",
-      "indent": 0,
-      "location": "./pages/home.md",
-      "slug": "content/home/",
-      "order": 2,
-      "title": "This is Rajiv's redo of the hax11ty",
-      "description": "This is Rajiv's redo of the hax11ty",
-      "parent": null,
-      "metadata": {
-        "created": 1646513887,
-        "updated": 1646513887,
-        "readtime": 1,
-        "contentDetails": {},
-        "files": [],
-        "haxcmsServiceWorker": true,
-        "tags": [
-          "content"
-        ],
-        "layout": "content.liquid",
-        "title": "This is Rajiv's redo of the hax11ty",
-        "order": 2
       }
     }
   ]
